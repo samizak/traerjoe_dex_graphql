@@ -27,10 +27,10 @@ class Traderjoe {
     }
     /**
      * Gets token data
-     * @param symbol
-     * @returns token data
+     * @param tokenID The ID of the token
+     * @returns Token data
      */
-    async GetTokenDataByID(symbol) {
+    async GetTokenDataByID(tokenID) {
         const getPriceQuery = (0, graphql_request_1.gql) `
             query getToken($id: String!) {
                 tokens (where:{ id: $id }) {
@@ -45,7 +45,7 @@ class Traderjoe {
             }
         `;
         const variables = {
-            id: symbol
+            id: tokenID
         };
         return await (0, graphql_request_1.request)(this.exchangeEndpoint, getPriceQuery, variables);
     }
