@@ -1,10 +1,19 @@
 {
   "name": "trader_joe_dex",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Querries the TraderJoe DEX subgraph",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
+  "files": [
+    "/dist"
+  ],
   "dependencies": {
     "graphql": "^16.0.1",
     "graphql-request": "^3.7.0"
+  },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samizak/traerjoe_dex_graphql.git"
   }
 }
