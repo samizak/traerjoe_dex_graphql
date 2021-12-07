@@ -1,0 +1,10 @@
+{
+  "name": "trader_joe_dex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^16.0.1",
+    "graphql-request": "^3.7.0"
+  }
+}
